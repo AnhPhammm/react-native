@@ -21,10 +21,22 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.tupham009.reactnativeapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4851f6c2-b1b1-4d4f-8315-9417f9f34fe2"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "nativeVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/4851f6c2-b1b1-4d4f-8315-9417f9f34fe2"
     }
   }
 }
