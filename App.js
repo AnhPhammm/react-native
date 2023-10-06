@@ -4,7 +4,7 @@ import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 import { useFonts } from "expo-font";
 import Home from "./screens/Home";
 import Details from "./screens/Details";
-
+import { TodoList } from "./components";
  const App =() => {
   const Stack = createStackNavigator();
   const theme = {
@@ -31,6 +31,7 @@ import Details from "./screens/Details";
       >
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Details" component={Details} />
+        <Stack.Screen name="TodoList" component={TodoList} />
       </Stack.Navigator>
     </NavigationContainer>
   );

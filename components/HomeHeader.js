@@ -1,7 +1,9 @@
 import { View, Text, Image, TextInput } from "react-native";
 import { COLORS, FONTS, SIZES, assets } from "../constants";
 
-const HomeHeader = ({onSearch}) => {
+const HomeHeader = ({ onSearch }) => {
+  const navigation = useNavigation();
+
   return (
     <View style={{ backgroundColor: COLORS.primary, padding: SIZES.font }}>
       <View
@@ -35,27 +37,43 @@ const HomeHeader = ({onSearch}) => {
           />
         </View>
       </View>
-      <View style={{ marginVertical: SIZES.font }}>
+      <View style={{flexDirection:'row', justifyContent:'space-between'}}>
+        <View style={{ marginVertical: SIZES.font }}>
+          <Text
+            style={{
+              fontFamily: FONTS.regular,
+              fontSize: SIZES.small,
+              color: COLORS.white,
+            }}
+          >
+            Hello Sir 👋
+          </Text>
+          <Text
+            style={{
+              fontFamily: FONTS.bold,
+              fontSize: SIZES.large,
+              color: COLORS.white,
+              marginTop: SIZES.base,
+            }}
+          >
+            Left find a masterpiece
+          </Text>
+        </View>
+        <View>
         <Text
-          style={{
-            fontFamily: FONTS.regular,
-            fontSize: SIZES.small,
-            color: COLORS.white,
-          }}
-        >
-          Hello Sir 👋
-        </Text>
-        <Text
-          style={{
-            fontFamily: FONTS.bold,
-            fontSize: SIZES.large,
-            color: COLORS.white,
-            marginTop: SIZES.base,
-          }}
-        >
-          Left find a masterpiece
-        </Text>
+            style={{
+              fontFamily: FONTS.bold,
+              fontSize: SIZES.large,
+              color: COLORS.white,
+              marginTop: SIZES.base,
+            }}
+            onPress={() => navigation.navigate("TodoList", {data})}
+          >
+            Todo List
+          </Text>
+        </View>
       </View>
+
       <View style={{ marginTop: SIZES.font }}>
         <View
           style={{

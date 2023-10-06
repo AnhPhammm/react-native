@@ -1,9 +1,10 @@
 import HomeHeader from "./HomeHeader";
 import FocusedStatusBar from "./FocusedStatusBar";
 import NFTCard from "./NFTCard";
-import DetailsDesc from "./DetailsDesc"
-import DetailsBids from "./DetailsBid"
+import DetailsDesc from "./DetailsDesc";
+import DetailsBids from "./DetailsBid";
 import { RectButton, CircleButton } from "./Button";
+import TodoList from "./TodoList";
 import {
   NFTTitle,
   EthPrice,
@@ -11,7 +12,6 @@ import {
   People,
   EndDate,
   SubInfo,
-  
 } from "./SubInfo";
 export {
   HomeHeader,
@@ -27,4 +27,5 @@ export {
   SubInfo,
   DetailsBids,
   DetailsDesc,
+  TodoList,
 };
